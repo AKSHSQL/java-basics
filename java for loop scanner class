@@ -29,3 +29,17 @@ public class Factorial                   //find factorial of number using Scanne
         System.out.println(fact);
     }
 }
+
+public class Multiplication              // print table of any no. using for loop
+{
+    public static void main(String [] args)
+    {
+        int i,n;
+        n=Integer.parseInt("7");
+        for (i=1;i<11;i++)
+        {
+            System.out.println(n+" X "+ i + " = " +(n*i));
+        }
+        
+    }
+}
