@@ -1,0 +1,31 @@
+public class Factorial                   //find factorial of number using for loop.
+{
+    public static void main(String []args)
+    {
+        int n,i,fact=1;
+        n=Integer.parseInt("3");
+        for (i=1;i<=n;i++)
+        {
+            fact=fact*i;
+        }
+        System.out.println(fact);
+    }
+}
+
+
+import java.util.*;
+public class Factorial                   //find factorial of number using Scanner class
+{
+    public static void main(String []args)
+    {
+        int n,i,fact=1;
+        Scanner sc=new Scanner (System.in);
+        System.out.println("enter value of n: ");
+        n=sc.nextInt();
+        for (i=1;i<=n;i++)
+        {
+            fact=fact*i;
+        }
+        System.out.println(fact);
+    }
+}
