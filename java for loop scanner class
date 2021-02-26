@@ -12,7 +12,7 @@ public class Factorial                   //find factorial of number using for lo
     }
 }
 
-
+-----------------------------------------------------------------------------------------------
 import java.util.*;
 public class Factorial                   //find factorial of number using Scanner class
 {
@@ -29,7 +29,7 @@ public class Factorial                   //find factorial of number using Scanne
         System.out.println(fact);
     }
 }
-
+-------------------------------------------------------------------------------------------------
 public class Multiplication              // print table of any no. using for loop
 {
     public static void main(String [] args)
@@ -43,3 +43,23 @@ public class Multiplication              // print table of any no. using for loo
         
     }
 }
+--------------------------------------------------------------------------------------------------
+// addition of N numbers enter by user.
+
+import java.util.*;
+public class AdditionOfNumbers
+{
+    public static void main(String[]args)
+    {
+        int i,n,add=0;
+        Scanner sc = new Scanner (System.in);
+        System.out.print("enter value ");
+        n=sc.nextInt();
+        for (i=1;i<=n;i++)
+        add=add+i;
+        {
+            System.out.println(add );
+        }
+    }
+}
+-----------------------------------------------------------------------------
