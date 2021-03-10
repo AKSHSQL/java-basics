@@ -5,11 +5,11 @@ package com.project.readFile;
 
 public class MainMethodForConverting {
 
-    public static final String inputfilePath = "/home/malhar/NetBeansProjects/xml-csv/src/main/java/com/project/readFile/";
-    public static final String outputfilePath = "/home/malhar/NetBeansProjects/xml-csv/src/main/java/com/project/readFile/";
-    public static final String xmlFileName = "021RATN17600302106000.xml";
-    public static final String xlsFileName = "021RATN17600302106000.xsl";
-    public static final String outputFileName = "021RATN17600302106000.csv";
+    public static final String inputfilePath = "../NetBeansProjects/xml-csv/src/main/java/com/project/readFile/";
+    public static final String outputfilePath = "..NetBeansProjects/xml-csv/src/main/java/com/project/readFile/";
+    public static final String xmlFileName = "file.xml";
+    public static final String xlsFileName = "file.xsl";
+    public static final String outputFileName = "file.csv";
 
     public static void main(String[] args) {
 
