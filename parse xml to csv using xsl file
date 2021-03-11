@@ -1,3 +1,36 @@
+// input path and file name by user
+
+package com.project.readFile;
+
+import java.util.Scanner;
+
+public class UserInput {
+
+//    public static final String path = "/home/malhar/NetBeansProjects/readFile/file.xml";
+
+    public static void main(String[] args) {
+
+        String commonPath = "/";
+        Scanner sc =  new Scanner(System.in);
+        System.out.println("Enter the filename with file path!!");
+        String filePath = sc.nextLine();
+        if(!filePath.startsWith("/"))
+            filePath = "/"+filePath;
+        String[] arr = filePath.split("/");
+        String commonFileName = arr[arr.length-1];
+        commonFileName = commonFileName.substring(0, commonFileName.indexOf('.'));
+        for(int i=1; i < arr.length-1 ; i++ ) {
+            commonPath = commonPath+arr[i]+"/";
+        }
+        String xlsFileLocation =  commonPath+commonFileName+".xsl";
+        String outputFileName = commonFileName+".csv";
+
+        XmlToCsvFileConverter xmlToCsvFileCoverter =  new XmlToCsvFileConverter();
+        xmlToCsvFileCoverter.convertXmlToCsvFile(filePath, xlsFileLocation, commonPath, outputFileName);
+
+    }
+    
+}
 --------------------------------------Parse XML to CSV using Java-------------------------------------------------------------------
 
 // 1.main method
@@ -5,8 +38,8 @@ package com.project.readFile;
 
 public class MainMethodForConverting {
 
-    public static final String inputfilePath = "../NetBeansProjects/xml-csv/src/main/java/com/project/readFile/";
-    public static final String outputfilePath = "..NetBeansProjects/xml-csv/src/main/java/com/project/readFile/";
+    public static final String inputfilePath = "../NetBeansProjects/readFile/";
+    public static final String outputfilePath = "..NetBeansProjects/readFile/";
     public static final String xmlFileName = "file.xml";
     public static final String xlsFileName = "file.xsl";
     public static final String outputFileName = "file.csv";
